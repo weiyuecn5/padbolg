@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查询结果</title>
+</head>
+<body>
+    <h1>查询结果</h1>
+    {% for foo in shuju %}
+        <a>账号编号:{{ foo.zhbh }}</a>
+        <br>
+        <a>石头数量:{{ foo.stsl }}</a>
+        <br>
+        <a>更新时间:{{ foo.gxsj }}</a>
+        <br>
+        <a>宠物编号:{{ foo.cwbh }}</a>
+        <br>
+        <br>
+    {% endfor %}
+</body>
+</html>
